@@ -1,0 +1,101 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="Admin_AdminMasterPage" %>
+<%@ Register Src ="~/MSMELoanTrackerAdmin/Includes/AdmMenu.ascx" TagName ="AdmMenu" TagPrefix ="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>BandhanBank</title>
+    <link href ="../css/AdminCss.css" type ="text/css" rel ="Stylesheet" />
+   <link href ="../Styles/Page.css" type ="text/css" rel ="Stylesheet" />
+<link href ="../Styles/Style.css" type ="text/css" rel ="Stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form2" runat="server" autocomplete="off">
+  
+       <table width="998px" cellpadding="0" cellspacing="0" border="0" align="center" bgcolor="#ffffff">
+        <tr>
+            <td style="width: 998px; height: 15px;" colspan="3">
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 998px; height: 90px;" valign="top" align="center" colspan="3">
+                <table id="Table_01" width="998px" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td rowspan="3" style="background-color: #ffffff;" align="left">
+                            <img src="../images/logo.png" alt="Logo" />
+                        </td>
+                        <td align="right" valign="middle">
+                            <asp:Label ID="lblDate" runat="server" CssClass="PageDt" Text=""></asp:Label>&nbsp;
+                            <br />
+                            <asp:Label ID="lblTime" runat="server" CssClass="PageDt" Text=""></asp:Label>&nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td  style="width: 634px; height: 34px;" align="right" valign="middle">
+                            
+                            <asp:Label ID="lblUsr" runat="server" Text="" CssClass="PageDt" ></asp:Label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td  style="width: 634px; height: 34px;" align="right" valign="middle">
+                         <a href="AmdMainPg.aspx" class ="PageDt" style="text-decoration:underline;">Home</a> &nbsp;&nbsp;<asp:LinkButton ID="lnkChngPwd"
+                                    runat="server" Text="Change Password"  Font-Underline="true" 
+                                CssClass ="PageDt" onclick="lnkChngPwd_Click" >
+                                </asp:LinkButton>&nbsp;&nbsp;<asp:LinkButton ID="lnkLogout"
+                                    runat="server" Text="Logout"  Font-Underline="true" CssClass ="PageDt" 
+                                onclick="lnkLogout_Click" ></asp:LinkButton>&nbsp;&nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 998px; height: 5px; background-color: #ffffff" colspan="3">
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 998px; height: 30px;" valign="top" align="center">            
+              <uc1:AdmMenu ID ="menu1" runat ="server" />
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 998px; height: 60px; background-color: #ffffff;" valign="middle"
+                align="center">
+                <asp:Label ID="lblSmeModNm" runat="server" Text="" CssClass="" ForeColor="#000000" Font-Bold ="true"></asp:Label>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 998px; height: 1px;"  valign="middle"
+                align="right">
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 998px; height: 10px; background-color: #ffffff" valign="middle"
+                align="right">
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 998px; height: 400px;" valign="top" align="center">
+               <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 998px; height: 10px; background-color: #ffffff" valign="middle"
+                align="right">
+            </td>
+        </tr>
+        
+        <tr>
+            <td style="width: 998px; height: 5px; background-color: #ffffff" valign="middle"
+                align="right">
+            </td>
+        </tr>
+    </table>
+   
+    </form>
+</body>
+</html>

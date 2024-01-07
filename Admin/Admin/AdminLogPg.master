@@ -1,0 +1,102 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminLogPg.master.cs" Inherits="Admin_AdminLogPg" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+       <script type="text/javascript" language="javascript">  javascript: window.history.forward(1);</script>
+   <script type="text/javascript" language="javascript" src="../Styles/AdminCss.css"></script>
+   <link href ="../../Styles/Page.css" type ="text/css" rel ="Stylesheet" />
+<link href ="../../Styles/Style.css" type ="text/css" rel ="Stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" autocomplete="off">
+    <div>
+       
+        
+
+        <table width="998px" cellpadding="0" cellspacing="0" border="0" align="center" >
+            
+            <tr>
+                <td style="width :998px; height :15px;" colspan="3">
+                </td> 
+            </tr> 
+            <tr>
+                <td style="width :998px; height :90px;" valign="top" align="center" colspan="3">
+                  
+                  <table width="998px" cellpadding="0" cellspacing="0" border="0" align="center" style="background-color:#ffffff" >
+                        <tr>
+                            <td width="381px" height = "93px" valign="top" align="left" rowspan="4">
+                                <img id="img1" src="../Images/Logo.png" align="top" style="border-style:None;border-width:0px; width :310px; height :89px;"  />
+                            </td>
+                            <td width="617px" height = "45px" valign="middle" align="right" colspan="3">
+                                <asp:Label ID="lblDate" runat="server" CssClass="PageDt" Text="" ></asp:Label>&nbsp;
+                                <br />
+                                <asp:Label ID="lblTime" runat="server" CssClass="PageDt" Text="" ></asp:Label>&nbsp;
+                            </td>
+                        </tr>
+                        <tr><td width="998px" height = "10px" colspan="3"></td></tr> 
+                        <tr>
+                            <td width="10px" height = "25px" valign="middle" align="center"></td>
+                            <td width="367px" height = "25px" valign="middle" align="center">
+                                
+                            </td>
+                            <td width="240px" height = "25px" valign="middle" align="right">
+                            </td>
+                        </tr>
+                        <tr><td width="998px" height = "10px" colspan="3"></td></tr>
+                    </table> 
+
+
+                  </td>
+            </tr>
+            <tr>
+                <td style="width :998px; height :5px; background-color:#ffffff" colspan="3">
+                </td> 
+            </tr> 
+            <tr>
+                <td style="width :998px; height :25px; background-color:#002F56" valign="top" align="center" colspan="3">
+                </td>
+            </tr>
+           
+            <tr>
+                <td style="width :499px; height :350px; background-color:#ffffff;" valign="top" align="center">
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+                <td width="1px" height="350px" valign="top" align="left" bgcolor="#002F56" >
+                </td>
+                <td width="498px" height="350px" valign="middle" align="center" bgcolor="#ffffff" class="label3" >
+                    Welcome to Bandhan Bank Administrator's Interface
+                </td>
+            </tr>
+           
+            <tr>
+                <td style="width :998px; height :1px;" valign="top" align="center" colspan="3" bgcolor="#002F56">
+                </td>
+            </tr>
+           
+            <tr>
+                <td style="width :998px; height :70px; background-color:#ffffff;" valign="top" align="center" colspan="3">
+                </td>
+            </tr>
+           
+        </table>
+
+
+
+
+
+
+
+
+
+
+
+        
+    </div>
+    </form>
+</body>
+</html>
